@@ -23,6 +23,7 @@ function fetchData(url) {
 
 function rastrear(){
     outputBox.innerHTML = '';
+    outputBox2.innerHTML = '';
     if(inputBox.value === ''){
         alert("Insira um código de rastreio...")}
     else{  
@@ -74,5 +75,3 @@ function copiartexto(){
     document.body.removeChild(copytext);
     alert("Rastreio Copiado");
 }
-
-
