@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rastreio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
 <body>
     <div class="container">
         <div class="todoapp">
-            <h2>To-do List <img id="todoimg" src="images/icon.png"></h2>
+            <h2>RASTREIO DE ENCOMENDAS <img id="todoimg" src="images/icon.png"></h2>
             <div class="row">
-                <input type="text" id="input-box" placeholder="Adicione uma tarefa">
-                <button onclick="addTask()">Adicionar</button>
+                <input type="text" id="input-box" placeholder="digite um código de rastreio">
+                <button onclick="rastrear()"><strong>Rastrear</strong></button>
             </div>
-            <ul id="list-container">
-                <!-- <li class="checked">task1</li>
-                <li>task2</li>
-                <li>task3</li> -->
-            </ul>
-        </div>   
+            <br>
+            <div id="output2"></div>
+            <div id="output"></div>
+            
+        </div> 
+        <button id="texto" onclick="copiartexto()">copiar</button>  
 <script src="script.js"></script>
 </body>
 </html>
