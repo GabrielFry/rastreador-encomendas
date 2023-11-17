@@ -1,19 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', 'sans-serif';
+    font-family: 'Quicksand', 'sans-serif';
     box-sizing: border-box;
 }
+
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #4371, #4e085f);
+    background: rgb(0,16,36);
+    background: linear-gradient(90deg, rgba(0,17,36,0.9556197478991597) 0%, rgba(57,29,219,0.7063200280112045) 65%, rgba(100,30,186,1) 100%);  
     padding: 10px;
+    color: white;
 }
+
 .todoapp{
     width: 100%;
     max-width: 540px;
-    background: #fff;   
+    background: #17191a;   
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -24,7 +28,7 @@
     margin-left: 10px;
 }
 .todoapp h2{
-    color: #002765;
+    color: rgb(174, 92, 241);
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -33,7 +37,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #edeef0;
+    background: #202223;
+    color: white;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -42,6 +47,7 @@ input{
     flex: 1;
     border: none;
     outline: none;
+    color: white;
     background: transparent;
     padding: 10px;
     font-weight: 14px;
@@ -50,12 +56,20 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #4e085f;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    box-shadow: 0 3px 0 rgb(129, 11, 129);
 }
+button:active{
+    box-shadow: none;
+    transform: translateY(3px);
+    transition: all .1s;
+}
+
+
 #res{
     content: '';
     position: absolute;
@@ -64,6 +78,7 @@ button{
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    color: white;
     top: 12px;
     left: 8px;
 }
@@ -74,7 +89,24 @@ button{
     width: 28px;
     border-radius: 50%;
     background-size: cover;
+    color: white;
     background-position: center;
     top: 12px;
     left: 8px;
+}
+
+#texto{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #4e085f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+}
+input::placeholder{
+    color: white;
 }
